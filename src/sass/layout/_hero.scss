@@ -1,0 +1,59 @@
+// .overlay {
+//     background-image: 
+//     url(../src/images/hero/tablet-mob-hero-bg/hero-tab-mob-bg.png);
+// }
+.hero__title {
+    margin-bottom: 8px;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 130%;
+    color: var(--secondary-text-color);
+}
+.hero__description {
+    font-weight: 500px;
+    font-size: 14px;
+    line-height: 1.57;
+}
+.hero__subtitle {
+    display: block;
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.57;
+    color: var(--secondary-text-color);
+}
+.hero__accent {
+    color: var(--primary-accent-color);
+}
+.hero__btn {
+    height: 48px;
+    margin-bottom: 40px;
+    @media screen and (max-width: 767px) {
+        min-width: 280px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    @media screen and (max-width: 320px) {
+        width: 100%;
+    }
+    @media screen and (min-width: 768px) {
+        min-width: 260px;
+    }
+}
+.hero__img {
+    width: 208px;
+    margin-right: auto;
+    margin-left: auto;
+    @media screen and (min-width: 768px) {
+        width: 376px;
+    }
+}
+.hero__wripper {
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+}
+.hero__left {
+    margin-left: 42px;
+    width: 322px;
+}
