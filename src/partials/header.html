@@ -17,14 +17,38 @@
       </ul>
     </nav>
     <button type="button" class="header__button modal-btn">consultation by phone</button>
-    <button type="button" class="header__burgermenu" aria-label="Переключатель мобильного меню">
-      <svg class="header__burgermenu-icon" width="20.5" height="12">
+    <button type="button" class="header__burgermenu" data-menu-open>
+      <svg class="header__burgermenu-icon" aria-label="Переключатель мобильного меню" width="20.5" height="12">
         <use href="./images/sprite.svg#icon-menu"></use>
       </svg>
     </button>
   </div>
-  <div class="header__menu">
-    <div class="menu__container container"></div>
+
+  <div class="mobile-menu" data-menu>
+    <div class="container mobile-menu__container">
+      <div class="mobile-menu__header">
+        <a href="./index.html" class="header__logo link">Hell<span class="header__logo-en"></span>EN<br>
+          <span class="header__logo-hellish">hellish
+            <span class="header__logo-english">english</span>
+          </span>
+        </a>
+        <button type="button" class="mobile-menu__close-btn" data-menu-close>
+          <svg class="mobile-menu__close-icon" width="40" height="40">
+            <use href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-nav">
+        <ul class="mobile-nav__menu section list">
+          <li class="mobile-nav__item"><a href="" class="link current">Studying program</a></li>
+          <li class="mobile-nav__item"><a href="" class="link">About</a></li>
+          <li class="mobile-nav__item"><a href="" class="link">Training options</a></li>
+          <li class="mobile-nav__item"><a href="" class="link">Contacts</a></li>
+        </ul>
+      </div>
+      <button type="button" class="mobile-menu__button modal-btn">consultation by phone</button>
+    </div>
   </div>
+
 
 </header>
