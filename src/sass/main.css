@@ -217,6 +217,11 @@ body {
   color: var(--primary-accent-color);
 }
 
+.header__burgermenu {
+  background-color: transparent;
+  border: none;
+}
+
 .header__burgermenu-icon {
   display: inline-block;
   width: 20px;
@@ -354,17 +359,17 @@ body {
 .mobile-menu__close-btn {
   position: absolute;
   top: 5px;
-  right: 0px;
+  right: 7px;
   background-color: #fff;
   border: none;
   padding: 0;
   line-height: 0;
+  background-color: transparent;
 }
 
 @media screen and (min-width: 768px) {
   .mobile-menu__close-btn {
     top: 16px;
-    right: 20px;
   }
 }
 
