@@ -1,0 +1,277 @@
+:root {
+  --primary-text-color: #B9B9B9;
+  --secondary-text-color: #111518;
+  --primary-accent-color: #FF6B09;
+  --secondary-accent-color: #ffffff;
+  --reviews-text-color: #3D3D3D;
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #E5E5E5;
+  --gaurantee-bg-color: #F1F1F1;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ul,
+ol {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+address {
+  font-style: normal;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  color: var(--primary-text-color);
+  background-color: var(--primary-bg-color);
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.08em;
+}
+
+.section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+@media screen and (max-width: 1199px) {
+  .section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (min-width: 320px) {
+  .container {
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .container {
+    width: 1680px;
+  }
+}
+
+.modal-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 26px 15px;
+  min-width: 280px;
+  height: 70px;
+  border: none;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  background-color: var(--primary-accent-color);
+  color: var(--secondary-accent-color);
+}
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 20px 0px 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__logo {
+  font-weight: 800;
+  font-size: 17px;
+  line-height: 0.18;
+  color: var(--secondary-text-color);
+  letter-spacing: 0.01em;
+}
+
+.header__logo-en::before {
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 20px;
+  margin: 0px 3px;
+  background-image: url(../images/fire.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.header__logo-hellish {
+  font-weight: 700;
+  font-size: 5px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  margin-top: 20px;
+}
+
+.header__logo-english {
+  color: var(--primary-accent-color);
+}
+
+.header__burgermenu-icon {
+  display: inline-block;
+  width: 20px;
+  height: 12px;
+  fill: black;
+}
+
+.header__navigation {
+  display: none;
+}
+
+.header__button {
+  display: none;
+}
+
+.header__burgermenu-icon {
+  fill: black;
+}
+
+.hero__title {
+  margin-bottom: 8px;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 130%;
+  color: var(--secondary-text-color);
+}
+
+.hero__description {
+  font-weight: 500px;
+  font-size: 14px;
+  line-height: 1.57;
+}
+
+.hero__subtitle {
+  display: block;
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.57;
+  color: var(--secondary-text-color);
+}
+
+.hero__accent {
+  color: var(--primary-accent-color);
+}
+
+.hero__btn {
+  height: 48px;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .hero__btn {
+    min-width: 280px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .hero__btn {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero__btn {
+    min-width: 260px;
+  }
+}
+
+.hero__img {
+  width: 208px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__img {
+    width: 376px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero__wripper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.hero__left {
+  margin-left: 42px;
+  width: 322px;
+}
+/*# sourceMappingURL=main.css.map */
