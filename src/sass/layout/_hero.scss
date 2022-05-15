@@ -11,12 +11,12 @@
         }
 
     @media screen and (min-width: 768px) {
-        background-image: url(../../src/images/hero/desktop-hero-bg/vector-1.png);
+        background-image: url(../../src/images/hero/desktop-hero-bg/desktop-hero-bg.png);
         background-position: left -34px bottom -35px;
         background-size: 113%;
 
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-                background-image: url(../../src/images/hero/desktop-hero-bg/vector-1@2x.png);
+                background-image: url(../../src/images/hero/desktop-hero-bg/desktop-hero-bg@2x.png);
                 background-position: left -34px bottom -35px;
                 background-size: 113%;
         }
