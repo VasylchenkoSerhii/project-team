@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./../images/fire.svg":[["fire.b1809948.svg","i6re"],"i6re"],"./../images/hero/tablet-mob-hero-bg/hero-tab-mob-bg.png":[["hero-tab-mob-bg.67c3101f.png","v0gB"],"v0gB"],"./../images/hero/tablet-mob-hero-bg/hero-bg@2x.png":[["hero-bg@2x.b6fa6b24.png","tEgr"],"tEgr"],"./../images/hero/desktop-hero-bg/desktop-hero-bg.png":[["desktop-hero-bg.c2cd9472.png","mH47"],"mH47"],"./../images/hero/desktop-hero-bg/desktop-hero-bg@2x.png":[["desktop-hero-bg@2x.61b1b931.png","au3B"],"au3B"],"./../images/advantages/advantages-face.svg":[["advantages-face.35bc2158.svg","PVFQ"],"PVFQ"],"./../images/advantages/advantages-phone.svg":[["advantages-phone.e4370da2.svg","fsKr"],"fsKr"],"./../images/advantages/advantages-umbrella.svg":[["advantages-umbrella.61b70938.svg","sNCF"],"sNCF"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/project-team/src.b3177eab.js.map
+//# sourceMappingURL=/project-team/src.705c1033.js.map
