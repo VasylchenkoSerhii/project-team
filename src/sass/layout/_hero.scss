@@ -1,23 +1,28 @@
+.section.hero {
+   @media screen and (min-width: 1680px) {
+       padding-bottom: 5px;
+   }
+}
 .overlay {
     background-image: url(../../src/images/hero/tablet-mob-hero-bg/hero-tab-mob-bg.png);
     background-repeat: no-repeat;
-    background-position: left -34px  bottom -35px;
+    background-position: left -34px  bottom -16px;
     background-size: cover;
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
             background-image: url(../../src/images/hero/tablet-mob-hero-bg/hero-bg@2x.png);
-            background-position: left -34px bottom -35px;
+            background-position: left -34px bottom -16px;
             background-size: cover;
         }
 
     @media screen and (min-width: 768px) {
         background-image: url(../../src/images/hero/desktop-hero-bg/desktop-hero-bg.png);
-        background-position: left -34px bottom -35px;
+        background-position: left -34px bottom -24px;
         background-size: 113%;
 
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
                 background-image: url(../../src/images/hero/desktop-hero-bg/desktop-hero-bg@2x.png);
-                background-position: left -34px bottom -35px;
+                background-position: left -34px bottom -24px;
                 background-size: 113%;
         }
     }
@@ -95,6 +100,10 @@
     width: 208px;
     margin-right: auto;
     margin-left: auto;
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 60px;
+    }
     @media screen and (min-width: 768px) {
         width: 376px;
     }
