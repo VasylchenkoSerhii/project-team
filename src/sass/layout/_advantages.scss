@@ -1,0 +1,58 @@
+.advantages__list {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 40px;
+    }
+}
+.advantages__item {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 164.9%;
+    color: var(--secondary-text-color);
+
+    &:not(:last-child) {
+        @media screen and (max-width:767px) {
+            margin-bottom: 24px;
+        }
+
+        @media screen and (min-width: 768px) {
+            margin-right: 21px;
+        }
+    }
+}
+
+.advantages__item--face::before {
+    content: '';
+    display: inline-block;
+    width: 59px;
+    height: 60px;
+    margin-right: 12px;
+    background-image: url(../../src/images/advantages/advantages-face.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.advantages__item--phone::before {
+    content: '';
+    display: inline-block;
+    width: 59px;
+    height: 60px;
+    margin-right: 12px;
+    background-image: url(../../src/images/advantages/advantages-phone.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.advantages__item--umbrella::before {
+     content: '';
+     display: inline-block;
+     width: 59px;
+     height: 60px;
+     margin-right: 12px;
+     background-image: url(../../src/images/advantages/advantages-umbrella.svg);
+     background-repeat: no-repeat;
+     background-size: contain;
+ }
