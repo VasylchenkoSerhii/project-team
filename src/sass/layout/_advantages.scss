@@ -1,17 +1,21 @@
 .advantages__list {
     @media screen and (min-width: 768px) {
         display: flex;
-        justify-content: flex-start;
-        margin-left: 40px;
     }
 }
 .advantages__item {
+    position: relative;
     display: flex;
     align-items: center;
     font-weight: 700;
     font-size: 14px;
-    line-height: 164.9%;
+    line-height: 125%;
     color: var(--secondary-text-color);
+
+    @media screen and (min-width: 1680px) {
+        font-size: 20px;
+    }
+
 
     &:not(:last-child) {
         @media screen and (max-width:767px) {
@@ -21,38 +25,66 @@
         @media screen and (min-width: 768px) {
             margin-right: 21px;
         }
+
+        @media screen and (min-width: 1680px) {
+            margin-right: 461px;
+        }
     }
 }
 
 .advantages__item--face::before {
     content: '';
     display: inline-block;
-    width: 59px;
+    min-width: 59px;
     height: 60px;
     margin-right: 12px;
     background-image: url(../../src/images/advantages/advantages-face.svg);
     background-repeat: no-repeat;
     background-size: contain;
+
+    @media screen and (min-width: 1680px) {
+        min-width: 100px;
+        height: 102px;
+    }
 }
 
 .advantages__item--phone::before {
     content: '';
     display: inline-block;
-    width: 59px;
+    min-width: 59px;
     height: 60px;
     margin-right: 12px;
     background-image: url(../../src/images/advantages/advantages-phone.svg);
     background-repeat: no-repeat;
     background-size: contain;
+
+    @media screen and (min-width: 1680px) {
+            min-width: 100px;
+            height: 102px;
+        }
 }
 
 .advantages__item--umbrella::before {
      content: '';
      display: inline-block;
-     width: 59px;
+     min-width: 59px;
      height: 60px;
      margin-right: 12px;
      background-image: url(../../src/images/advantages/advantages-umbrella.svg);
      background-repeat: no-repeat;
      background-size: contain;
+
+    @media screen and (min-width: 1680px) {
+            min-width: 100px;
+            height: 102px;
+        }
+ }
+
+ .advantages__text {
+     @media screen and (min-width: 1680px) {
+        position: absolute;
+        top: 25%;
+        left: 75%;
+        width: 300px;
+     }
  }

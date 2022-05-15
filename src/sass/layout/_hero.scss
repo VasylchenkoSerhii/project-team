@@ -117,12 +117,15 @@
   }
 }
 .hero__left {
-    width: 292px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 100%;
+
+    @media screen and (max-width: 767px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
     @media screen and (min-width: 768px)  and (max-width: 1679px){
         min-width: 332px;
-        margin-left: 42px;
     }
     @media screen and (min-width: 1680px) {
         min-width: 560px;
