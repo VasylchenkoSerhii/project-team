@@ -1,0 +1,107 @@
+.program {
+    background-color: #111518;
+}
+
+.program__container {
+    position: relative;
+}
+
+.program__title {
+    margin-bottom: 40px;
+    color: var(--secondary-accent-color);
+}
+
+.program__list {
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 80px;
+        left: 62px;
+        display: inline-block;
+        min-height: 1253px;
+        border: 1px solid var(--secondary-accent-color);
+        // transform: rotate(90deg);
+    }
+}
+
+.program__item {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 2;
+    text-transform: uppercase;
+    color: var(--secondary-accent-color);
+
+    &:not(:first-child) {
+        margin-top: 40px;
+    }
+}
+
+.program__text {
+    margin-bottom: 10px;
+
+    &::before {
+        content: '';
+        position: relative;
+        display: inline-block;
+        min-width: 12px;
+        height: 12px;
+        border-radius: 100%;
+        margin-left: 42px;
+        margin-right: 20px;
+        z-index: 10;
+        background-color: var(--primary-accent-color);
+    }
+}
+
+.semestr__list {
+    margin-left: 73px;
+}
+
+.semester__item {
+    font-size: 12px;
+    line-height: 164.9%;
+    text-transform: none;
+    color: var(--primary-accent-color);
+
+    &--before::before {
+        content: '';
+            display: block;
+            max-width: 12px;
+            height: 2px;
+            margin-bottom: 24px;
+            background-color: var(--primary-accent-color);
+    }
+}
+
+.semester__text {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+    &::before {
+        content: '';
+        display: inline-block;
+        min-width: 12px;
+        height: 2px;
+        margin-right: 6px;
+        background-color: var(--primary-accent-color);
+    }
+}
+
+.skills__item {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.66;
+    opacity: 0.5;
+    color: var(--primary-text-color);
+
+    &:last-child {
+        margin-bottom: 10px;
+    }
+
+    &.skills__item--none-mb {
+        margin-bottom: 0;
+    }
+}
+
