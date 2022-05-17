@@ -1,0 +1,109 @@
+.problems {
+  background-image: linear-gradient(
+    to bottom,
+    var(--secondary-text-color) 0% 75%,
+    var(--secondary-accent-color) 75% 100%
+  );
+  @media screen and (min-width: 1680px) {
+    background-image: url(../images/big-fire.svg),
+      linear-gradient(
+        to bottom,
+        var(--secondary-text-color) 0% 75%,
+        var(--secondary-accent-color) 75% 100%
+      );
+    background-repeat: no-repeat;
+    background-position: right 0px top 88px, right 0px top 0px;
+  }
+}
+
+.problems__backside {
+  padding: 24px 25px 24px 5px;
+  @media screen and (min-width: 768px) {
+    padding: 40px 280px 25px 17px;
+  }
+  @media screen and (min-width: 1680px) {
+    padding: 80px 800px 80px 0px;
+  }
+}
+
+.problems__title {
+  text-align: start;
+  color: var(--secondary-accent-color);
+  font-size: 24px;
+  @media screen and (min-width: 1680px) {
+    font-size: 46px;
+  }
+}
+
+.problems__title-particle {
+  color: var(--primary-accent-color);
+}
+
+.problems__front {
+  margin: 0px 5px 0px 5px;
+  background-color: var(--secondary-accent-color);
+  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+  @media screen and (min-width: 768px) {
+    margin: 0px 17px 0px 17px;
+  }
+  @media screen and (min-width: 1680px) {
+    margin: 0px;
+  }
+}
+
+.problems__list {
+  padding: 20px 26px 24px 32px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 32px 80px 32px 80px;
+  }
+  @media screen and (min-width: 1680px) {
+    padding: 60px 192px 60px 140px;
+    justify-content: space-between;
+  }
+}
+
+.problems__item {
+  margin-bottom: 16px;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 80px) / 2);
+    margin-bottom: 17px;
+  }
+  @media screen and (min-width: 1680px) {
+    flex-basis: calc((100% - 90px) / 3);
+    max-width: 336px;
+    margin-bottom: 40px;
+  }
+}
+
+.problems__subtitle {
+  display: flex;
+  align-items: center;
+  @include font(700, 14px, 17px);
+  letter-spacing: 0.08em;
+  margin-bottom: 5px;
+  color: var(--primary-accent-color);
+
+  &::before {
+    content: '';
+    display: inline-block;
+    margin-right: 10px;
+    width: 25px;
+    height: 2px;
+    background-color: var(--primary-accent-color);
+  }
+  @media screen and (min-width: 1680px) {
+    font-size: 20px;
+    line-height: 164.9%;
+  }
+}
+
+.problems__text {
+  @include font(800, 14px, 20px);
+  letter-spacing: 0.08em;
+  color: var(--secondary-text-color);
+  @media screen and (min-width: 1680px) {
+    @include font(800, 20px, 24px);
+  }
+}
