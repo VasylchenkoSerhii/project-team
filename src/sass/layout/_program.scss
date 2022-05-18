@@ -78,14 +78,14 @@
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
-    line-height: 2;
+    line-height: 1;
     text-transform: uppercase;
     color: var(--secondary-accent-color);
 
     &::before {
         content: '';
         position: absolute;
-        top: 8px;
+        top: -1px;
         left: -6px;
         display: inline-block;
         min-width: 12px;
