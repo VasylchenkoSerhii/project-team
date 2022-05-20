@@ -1,0 +1,109 @@
+.benefits {
+    background-image: linear-gradient(#111518 0% 63%, #ffffff 63% 100%);
+
+    @media screen and (min-width: 768px) {
+        background-image: linear-gradient(#111518 0% 40%, #ffffff 40% 100%);
+    }
+
+    @media screen and (min-width: 1680px) {
+        background-image: linear-gradient(#111518 0% 60%, #ffffff 60% 100%);
+    }
+}
+
+.benefits__container {
+
+    @media screen and (min-width: 1680px) {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+.benefits__title {
+    margin-bottom: 32px;
+    color: var(--secondary-accent-color);
+}
+
+.benefits__wripper {
+    width: 280px;
+    padding: 20px;
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+    background-color: var(--primary-bg-color);
+
+    @media screen and (min-width: 768px) {
+        width: 688px;
+        height: 381px;
+        padding: 40px 112px 40px 92px;
+    }
+
+    @media screen and (min-width: 1680px) {
+        width: 1648px;
+        height: 382px;
+        padding: 60px 32px 60px 140px;
+    }
+}
+
+.benefits__list {
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1679px) {
+        margin-left: -32px;
+        margin-top: -40px;
+    }
+
+    @media screen and (min-width: 1680px) {
+        justify-content: space-between;
+        margin-top: -60px;
+    }
+}
+
+.benefits__item {
+
+    @media screen and (min-width: 768px) and (max-width: 1679px) {
+        flex-basis: calc(100% / 2 - 32px);
+        margin-left: 32px;
+        margin-top: 40px;
+    }
+
+    @media screen and (min-width: 1680px) {
+        width: 371px;
+        margin-top: 60px;
+    }
+}
+
+.benefits__subtitle {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 164.9%;
+    margin-bottom: 8px;
+    color: var(--primary-accent-color);
+
+    @media screen and (min-width: 1680px) {
+        font-size: 20px;
+    }
+
+    &::before {
+        content: '';
+        min-width: 14px;
+        height: 2px;
+        margin-right: 7px;
+        background-color: var(--primary-accent-color);
+    }
+}
+
+.benefits__subscriber {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.42;
+    color: var(--secondary-text-color);
+
+    @media screen and (min-width: 1680px) {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+}
