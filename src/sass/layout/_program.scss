@@ -1,12 +1,13 @@
 .program {
     background-color: #111518;
     overflow: hidden;
-}
 
-.program__title {
     @media screen and (min-width: 768px) {
-        text-align: start;
-        font-size: 26px;
+       padding-bottom: 180px; 
+    }
+
+    @media screen and (min-width: 1680px) {
+        padding-bottom: 237px;
     }
 }
 
@@ -22,12 +23,32 @@
 .program__title {
     margin-bottom: 40px;
     color: var(--secondary-accent-color);
+
+    @media screen and (min-width: 768px) {
+        text-align: start;
+        font-size: 26px;
+    }
+
+    @media screen and (min-width: 1680px) {
+        font-size: 46px;
+        margin-bottom: 80px;
+    }
+
 }
 
 .program__list {
+    
+    position: relative;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1679px) {
         margin-left: 97px;
+    }
+
+    @media screen and (min-width: 1680px) {
+        display: flex;
+        padding-left: 156px;
+        padding-top: 58px;
+        border-top: 1px solid var(--secondary-accent-color);
     }
 
     &::after {
@@ -47,13 +68,28 @@
             }
             
         @media screen and (min-width: 768px) {
+            position: absolute;
             background-image: url(../../src/images/program/tablet-program-img/program-tab.png);
             width: 368px;
             height: 268px;
-            transform: translate(79%, -71%);
+            bottom: -146px;
+            right: 184px;
 
             @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
                 background-image: url(../../src/images/program/tablet-program-img/program-tab@2x.png);
+            }
+        }
+
+        @media screen and (min-width: 1680px) {
+            min-width: 676px;
+            height: 402px;
+            background-image: url(../../src/images/program/desktop-program-img/program-desk.png);
+            background-size: contain;
+            bottom: -370px;
+            left: -379px;
+
+            @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+                background-image: url(../../src/images/program/desktop-program-img/program-desk@2x.png);
             }
         }
 
@@ -62,25 +98,45 @@
 
 .program__item {
     position: relative;
-    padding-left: 28px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (max-width: 767px) {
+        padding-left: 28px;
+    }
+
+
+    @media screen and (min-width: 768px) and (max-width: 1679px) {
         padding-left: 107px;
     }
 
+    @media screen and (min-width: 1680px) {
+        min-width: 240px;
+    }
+
     &:not(:last-child) {
-        border-left: 1px solid var(--secondary-accent-color);
+
+        @media screen and (max-width: 1679px) {
+            border-left: 1px solid var(--secondary-accent-color);
+        }
+
+        @media screen and (min-width: 1680px) {
+            margin-right: 40px;
+        }
+        
         padding-bottom: 40px;
     }
 }
 
 .program__text {
-    margin-bottom: 10px;
+    margin-bottom: 24px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1;
     text-transform: uppercase;
     color: var(--secondary-accent-color);
+
+    @media screen and (min-width: 1680px) {
+        font-size: 20px;
+    }
 
     &::before {
         content: '';
@@ -93,12 +149,16 @@
         border-radius: 100%;
         z-index: 10;
         background-color: var(--primary-accent-color);
+
+        @media screen and (min-width: 1680px) {
+            top: -64px;
+        }
     }
 }
 
 .semestr__list {
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1679px) {
         display: flex;
     }
 }
@@ -120,7 +180,7 @@
 
     &:not(:last-child) {
 
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 768px) and (max-width: 1679px) {
             margin-right: 32px;
         }
     }
@@ -129,9 +189,14 @@
 .semester__text {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1;
 
-
+    @media screen and (min-width: 1680px) {
+        font-size: 20px;
+    }
 
     &::before {
         content: '';
@@ -151,12 +216,16 @@
     opacity: 0.5;
     color: var(--primary-text-color);
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1679px) {
         width: 155px;
     }
 
+    @media screen and (min-width: 1680px) {
+        font-size: 18px;
+    }
+
     &:last-child {
-        padding-bottom: 10px;
+        padding-bottom: 24px;
     }
 
     &.skills__item--none-mb {
