@@ -1,16 +1,11 @@
 .header__container {
   display: flex;
   align-items: center;
-  margin: 20px 5px 0px 5px;
+  margin-top: 20px;
   justify-content: space-between;
 
   @media screen and (min-width: 768px) {
-    margin: 40px 17px 40px 17px;
-  }
-
-  @media screen and (min-width: 1680px) {
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-top: 40px;
   }
 }
 
@@ -171,10 +166,10 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  margin: 20px 5px 0px 5px;
+  margin-top: 20px;
 
   @media screen and (min-width: 768px) {
-    margin: 40px 17px 0px 17px;
+    margin-top: 40px;
   }
 }
 
