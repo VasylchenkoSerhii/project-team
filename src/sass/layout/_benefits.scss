@@ -6,7 +6,8 @@
     }
 
     @media screen and (min-width: 1680px) {
-        background-image: linear-gradient(#111518 0% 60%, #ffffff 60% 100%);
+        padding-top: 0;
+        background-image: linear-gradient(#111518 0% 42%, #ffffff 42% 100%);
     }
 }
 
@@ -21,6 +22,19 @@
 .benefits__title {
     margin-bottom: 32px;
     color: var(--secondary-accent-color);
+
+    @media screen and (min-width: 1680px) {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
 }
 
 .benefits__wripper {
