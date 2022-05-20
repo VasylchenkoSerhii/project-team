@@ -1,0 +1,44 @@
+.reviews__title {
+  margin-bottom: 24px;
+}
+
+.reviews__img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+}
+
+.reviews__icon {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+  transition: fill 250ms linear;
+}
+
+.rewiews__subtitle {
+  @include font(800, 14px, 17px);
+  text-align: center;
+  letter-spacing: 0.08em;
+  color: var(--primary-accent-color);
+  margin-bottom: 16px;
+}
+
+.rewiews__education {
+  @include font(500, 12px, 15px);
+  padding: 0px 20px;
+  text-align: center;
+  letter-spacing: 0.08em;
+  margin-bottom: 16px;
+  color: var(--primary-text-color);
+}
+
+.rewiews__about {
+  @include font(500, 12px, 20px);
+  padding: 0px 20px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--reviews-text-color);
+}
