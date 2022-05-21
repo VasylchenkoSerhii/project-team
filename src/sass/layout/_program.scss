@@ -61,8 +61,7 @@
         background-repeat: no-repeat;
         transform: translate(54%, -33%);
 
-        @media (min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
                 background-image: url(../../src/images/program/mobile-program-img/program-mob@2x.png);
                 background-size: cover;
             }
