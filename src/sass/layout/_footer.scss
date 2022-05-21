@@ -1,0 +1,115 @@
+.footer__container {
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+  @media screen and (min-width: 768px) {
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 1680px) {
+    justify-content: flex-start;
+  }
+}
+
+.footer__contact {
+  margin-top: 20px;
+}
+
+.footer__list {
+  display: block;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.footer__link {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover .footer__mobile-icon,
+  &:focus .footer__mobile-icon {
+    transform: scale(1.2);
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 24px;
+    padding: 8px 24px;
+    border-right: 1px solid var(--primary-text-color);
+  }
+  @media screen and (min-width: 1680px) {
+    margin-left: 452px;
+  }
+}
+
+.footer__mobile {
+  display: flex;
+  align-items: center;
+  @include font(600, 14px, 17px);
+  letter-spacing: 0.08em;
+  color: var(--secondary-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--primary-accent-color);
+  }
+  @media screen and (min-width: 768px) {
+    @include font(600, 20px, 24px);
+  }
+  @media screen and (min-width: 1680px) {
+    @include font(600, 30px, 37px);
+  }
+}
+
+.footer__mobile-icon {
+  margin-right: 8px;
+  fill: var(--primary-accent-color);
+}
+
+.footer__link-icon {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__social {
+  padding: 7px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 12px;
+  background: linear-gradient(
+    225.4deg,
+    #833ab4 18.3%,
+    #9c3495 24.28%,
+    #dc2546 37.27%,
+    #fd1d1d 43.71%,
+    #fc6831 54.52%,
+    #fc9b40 62.93%,
+    #fcaf45 67.04%,
+    #fdb750 68.89%,
+    #fecb6a 74.4%,
+    #ffd87a 79.32%,
+    #ffdc80 83.11%
+  );
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
+}
+
+.footer__bottom {
+  padding: 24px 0px;
+  text-align: center;
+  background-color: var(--secondary-text-color);
+  @media screen and (min-width: 1680px) {
+    padding: 27px 0px;
+  }
+}
+
+.footer__bottom-text {
+  @include font(500, 14px, 28px);
+}
