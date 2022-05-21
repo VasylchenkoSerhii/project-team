@@ -26,4 +26,11 @@
       </clipPath>
     </defs>
   </symbol>
+  <symbol version="1.0" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512.000000 512.000000" id="icon-up">
+    <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" stroke="none">
+      <path d="M1912 2808 c-332 -332 -610 -616 -619 -632 -35 -66 20 -146 100 -146
+41 0 42 1 604 562 l563 563 563 -563 c562 -561 563 -562 604 -562 80 0 135 80
+100 146 -9 16 -287 300 -619 632 l-603 602 -45 0 -45 0 -603 -602z"></path>
+    </g>
+  </symbol>
 </svg>
