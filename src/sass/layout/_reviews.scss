@@ -1,5 +1,35 @@
+@media screen and (min-width: 768px) {
+  .reviews__block {
+    display: flex;
+    padding: 40px 50px;
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+  }
+
+  .reviews__text {
+    width: 412px;
+    margin-left: 44px;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .reviews__container {
+    padding: 0px 280px;
+  }
+  .reviews__block {
+    padding: 60px 80px;
+  }
+  .reviews__text {
+    padding-right: 10px;
+    width: 706px;
+    margin-left: 44px;
+  }
+}
+
 .reviews__title {
   margin-bottom: 24px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+  }
 }
 
 .reviews__img {
@@ -24,6 +54,15 @@
   letter-spacing: 0.08em;
   color: var(--primary-accent-color);
   margin-bottom: 16px;
+  @media screen and (min-width: 768px) {
+    @include font(800, 20px, 24px);
+    text-align: start;
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1680px) {
+    @include font(800, 30px, 37px);
+    margin-bottom: 8px;
+  }
 }
 
 .rewiews__education {
@@ -33,6 +72,14 @@
   letter-spacing: 0.08em;
   margin-bottom: 16px;
   color: var(--primary-text-color);
+  @media screen and (min-width: 768px) {
+    text-align: start;
+    padding: 0px;
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1680px) {
+    @include font(500, 14px, 17px);
+  }
 }
 
 .rewiews__about {
@@ -41,4 +88,15 @@
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--reviews-text-color);
+  @media screen and (min-width: 768px) {
+    text-align: start;
+    padding: 0px;
+  }
+  @media screen and (min-width: 1680px) {
+    @include font(500, 18px, 28px);
+  }
+}
+
+.rewiews__about-link {
+  color: var(--primary-accent-color);
 }
