@@ -76,6 +76,12 @@
 
 .benefits__item {
 
+    @media screen and (max-width: 767px) {
+        &:not(:last-child) {
+            margin-bottom: 40px;
+        }
+        }
+
     @media screen and (min-width: 768px) and (max-width: 1679px) {
         flex-basis: calc(100% / 2 - 32px);
         margin-left: 32px;
