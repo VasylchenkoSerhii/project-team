@@ -101,10 +101,13 @@
   }
 }
 
+.footer__down {
+  background-color: var(--secondary-text-color);
+}
+
 .footer__bottom {
   padding: 24px 0px;
   text-align: center;
-  background-color: var(--secondary-text-color);
   @media screen and (min-width: 1680px) {
     padding: 27px 0px;
   }

@@ -1,19 +1,24 @@
 .modal-btn {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 15px;
-    min-width: 280px;
-    height: 70px;
-    border: none;
-    cursor: pointer;
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.21;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    background-color: var(--primary-accent-color);
-    color: var(--secondary-accent-color);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 15px;
+  min-width: 280px;
+  height: 70px;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  background-color: var(--primary-accent-color);
+  color: var(--secondary-accent-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
